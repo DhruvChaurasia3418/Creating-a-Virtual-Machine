@@ -1,4 +1,4 @@
-#Create a variable for zone
+# Create a variable for zone
 
 export TECHVINE_SOLUTION_ZONE=
 
