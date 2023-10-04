@@ -2,6 +2,7 @@
 
 export TECHVINE_SOLUTION_ZONE=
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Task1:
 
@@ -25,12 +26,16 @@ gcloud compute firewall-rules create allow-http \
 #SSH into the "gcelab" instance
 gcloud compute ssh gcelab --zone=$TECHVINE_SOLUTION_ZONE --quiet
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ## Task2:
 sudo apt-get update
 sudo apt-get install -y nginx
 ps auwx | grep nginx
 exit
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Task3:
 gcloud compute instances create gcelab2 --machine-type e2-medium --zone=$TECHVINE_SOLUTION_ZONE
