@@ -1,11 +1,9 @@
-# Set the project region for this lab
-gcloud config set compute/region us-west1
-
-# Create a variable for region
-export REGION=us-west1
-
 # Create a variable for zone
 export ZONE=us-west1-c
+
+
+
+Task1:
 
 # Create a new instance named "gcelab"
 gcloud compute instances create gcelab \
@@ -30,3 +28,13 @@ gcloud compute instances create gcelab2 \
 
 # SSH into the "gcelab" instance
 gcloud compute ssh gcelab --zone=$ZONE --quiet
+
+
+Task2:
+sudo apt-get update
+sudo apt-get install -y nginx
+ps auwx | grep nginx
+exit
+
+Task3:
+gcloud compute instances create gcelab2 --machine-type e2-medium --zone=$ZONE
