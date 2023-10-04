@@ -21,10 +21,6 @@ gcloud compute firewall-rules create allow-http \
   --source-ranges=0.0.0.0/0 \
   --target-tags=http-server
 
-#Create another instance named "gcelab2"
-gcloud compute instances create gcelab2 \
-  --machine-type=e2-medium \
-  --zone=$TECHVINE_SOLUTION_ZONE
 
 #SSH into the "gcelab" instance
 gcloud compute ssh gcelab --zone=$TECHVINE_SOLUTION_ZONE --quiet
